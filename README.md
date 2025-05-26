@@ -1,16 +1,26 @@
-# Roman History Facts API
+# 🏛️ Roman History Facts API
 
-A simple public API that returns a daily or date-specific Roman history fact.
+A simple, public JSON API that returns a unique Roman history fact for each day of the year. Built with **FastAPI** and easily deployable to any VPS or cloud host.
 
-## Endpoints
+> Ideal for bots, daily history feeds, educational tools, or curious minds.
 
-- `/today` — Get today's fact based on UTC
-- `/fact?date=MM-DD` — Get a fact for a specific date
+---
 
-## Usage
+## 🌐 Live Demo
 
-Run locally with:
+🚀 [https://your-api-domain.com/today](https://your-api-domain.com/today)
 
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
-# roman-history-api
+---
+
+## 📘 API Endpoints
+
+### `GET /today`
+
+Get today’s Roman history fact (based on UTC).
+
+**Example Response**:
+```json
+{
+  "date": "05-24",
+  "fact": "15 BC – The city of Augusta Vindelicorum (Augsburg) is founded as a Roman military colony in the new province of Raetia."
+}
